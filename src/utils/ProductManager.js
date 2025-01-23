@@ -1,10 +1,10 @@
 // Header: importar modulos
 import fs from 'fs'
 import {writeFile} from 'fs/promises'
-//import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'url'
 import path from 'path'
 import {log} from 'console'
-//const __filename = fileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
@@ -12,7 +12,7 @@ class ProductManager{
     #Products = []
     #id = 1
     constructor(direcc){
-        this.direcc = path.join(__dirname, '..', 'memoria', direcc)
+        this.direcc = path.join(__dirname, '..', '../memory', direcc)
         this.init()
     }
     // Inicializamos el archivo de productos, si existe lo leemos y si no lo creamos
@@ -59,7 +59,7 @@ class ProductManager{
 
     async addProduct(product){
         try {
-            if(product.name === '' || product.price === '' || product.stock === ''){//Comprobación básica de algunos campos sensibles
+            if(product.title === '' || product.description === '' || product.price === ''|| product.code === ''|| product.stock === ''|| product.category === ''){//Comprobación básica de algunos campos sensibles
                 throw new Error('Faltan datos')
             }
             const newProduct = {
@@ -69,7 +69,9 @@ class ProductManager{
                 price : product.price,
                 thumbnail : product.thumbnail,
                 code : product.code,
-                stock : product.stock
+                stock : product.stock,
+                status : product.status || true,
+                category : product.category
             }
             this.#Products.push(newProduct)
             const productFile = JSON.stringify(this.#Products, null, 2)
@@ -117,7 +119,7 @@ const productManager = new ProductManager('products.json')
 productManager.init()
 
 export default productManager
-/*
+
 productManager.addProduct({
     title : 'Harry Potter and the Philosophers Stone',
     description : 'Harry Potter and the Philosophers Stone is the first novel in the Harry Potter series and J.K. Rowlings debut novel, first published in 1997 by Bloomsbury.',
@@ -125,7 +127,7 @@ productManager.addProduct({
     thumbnail : 'https://www.google.com',
     code : 'COD1',
     stock : 10
-})
+})/*
 productManager.addProduct({
     title : 'Harry Potter and the Chamber of Secrets',
     description : 'Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J.K. Rowling and the second novel in the Harry Potter series.',
