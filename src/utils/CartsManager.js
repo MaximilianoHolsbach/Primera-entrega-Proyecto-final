@@ -74,6 +74,6 @@ cartsManager.init()
 
 //cartsManager.addProductToCart(1, 3, 2);
 
-cartsManager.getCart(2);
+//cartsManager.getCart(2);
 
 export default cartsManager;
