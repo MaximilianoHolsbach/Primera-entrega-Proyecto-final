@@ -1,8 +1,9 @@
 import { response, Router } from "express";
 import CartsManager from '../utils/CartsManager.js'
 
-export const CartsRouter = Router();
 
+export const CartsRouter = Router();
+/*
 CartsRouter.get('/:id', (req, res) => {
     try {
         const { id } = req.params
@@ -25,4 +26,6 @@ CartsRouter.get('/:id', (req, res) => {
         })
     }
 });
+*/
+
 

@@ -113,12 +113,13 @@ class ProductManager{
         }
     }
 }
-
-const productManager = new ProductManager('products.json')
-
+export const productManager = new ProductManager('products.json')
 productManager.init()
+export default ProductManager
 
-export default productManager
+/*
+const productManager = new ProductManager('products.json')
+productManager.init()
 
 productManager.addProduct({
     title : 'Harry Potter and the Philosophers Stone',
@@ -127,7 +128,7 @@ productManager.addProduct({
     thumbnail : 'https://www.google.com',
     code : 'COD1',
     stock : 10
-})/*
+})
 productManager.addProduct({
     title : 'Harry Potter and the Chamber of Secrets',
     description : 'Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J.K. Rowling and the second novel in the Harry Potter series.',

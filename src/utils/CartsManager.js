@@ -66,6 +66,8 @@ class CartsManager{
     }
 }
 
+export default CartsManager;
+/*
 const cartsManager = new CartsManager('carts.json')
 
 cartsManager.init()
@@ -75,5 +77,4 @@ cartsManager.init()
 //cartsManager.addProductToCart(1, 3, 2);
 
 //cartsManager.getCart(2);
-
-export default cartsManager;
+*/
