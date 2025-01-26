@@ -1,2 +1,24 @@
 [
+  {
+    "id": 1,
+    "title": "Harry Potter and the Philosophers Stone",
+    "description": "Harry Potter and the Philosophers Stone is the first novel in the Harry Potter series and J.K. Rowlings debut novel, first published in 1997 by Bloomsbury.",
+    "price": 100,
+    "thumbnail": "https://www.google.com",
+    "code": "COD1",
+    "stock": 10,
+    "status": true,
+    "category": "Literatura fantástica"
+  },
+  {
+    "id": 2,
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "description": "Harry Potter and the Prisoner of Azkaban is the third novel in the Harry Potter series, written by J. K. Rowling.",
+    "price": 300,
+    "thumbnail": "https://www.google.com",
+    "code": "COD3",
+    "stock": 30,
+    "status": true,
+    "category": "Literatura fantástica"
+  }
 ]
