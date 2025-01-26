@@ -57,7 +57,8 @@ No es necesario realizar ninguna implementación visual, todo el flujo se puede 
 - Leer productos en carrito: http://localhost:8080/api/carts/3
 - Agregar productos al carrito: http://localhost:8080/api/carts/3/product/3
 
-
+### Colecciones de POSTMAN
+- RUTA : primera entrega.postman_collection.json
 
 
 
