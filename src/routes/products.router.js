@@ -1,36 +1,13 @@
 import { Router } from "express";
-import productManager from "../utils/ProductManager.js";
+import productsController from "../controllers/productsController.js";
 
 
-export const ProductsRouter = Router();
+const router = Router()
 
-ProductsRouter.get('/', (req, res) => {
-    return res.status(200).json({
-        success: true,
-        response: productManager.getProducts()
-    })
-});
+router.post('/', productsController.addProduct);
+router.get('/', productsController.getProducts);
+router.get('/:id', productsController.getProductById);
+router.put('/:id', productsController.updateProduct);
+router.delete('/:id', productsController.deleteProduct);
 
-ProductsRouter.get('/:id', (req, res) => {
-    try {
-        const { id } = req.params
-        const product = productManager.getProductById(Number(id))
-        if(product === 'string'){
-            return res.status(404).json({
-                success: false,
-                response: product
-            })
-        }else{
-            return res.status(200).json({
-                success: true,
-                response: product
-            })
-        }
-    } catch (error) {
-        return res.status(500).json({
-            success: false,
-            response: error.message
-        })
-        
-    }
-});
+export default router;

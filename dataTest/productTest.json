@@ -1,0 +1,63 @@
+{
+    "title" : "Harry Potter and the Philosophers Stone",
+    "description" : "Harry Potter and the Philosophers Stone is the first novel in the Harry Potter series and J.K. Rowlings debut novel, first published in 1997 by Bloomsbury.",
+    "price" : 100,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD1",
+    "stock" : 10,
+    "category" : "Literatura fantástica"
+}
+{
+    "title" : "Harry Potter and the Chamber of Secrets",
+    "description" : "Harry Potter and the Chamber of Secrets is the second novel in the Harry Potter series, written by J. K. Rowling.",
+    "price" : 200,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD2",
+    "stock" : 20,
+    "category" : "Literatura fantástica"
+}
+{
+    "title" : "Harry Potter and the Prisoner of Azkaban",
+    "description" : "Harry Potter and the Prisoner of Azkaban is the third novel in the Harry Potter series, written by J. K. Rowling.",
+    "price" : 300,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD3",
+    "stock" : 30,
+    "category" : "Literatura fantástica"
+}
+{
+    "title" : "Harry Potter and the Goblet of Fire",
+    "description" : "Harry Potter and the Goblet of Fire is the fourth novel in the Harry Potter series, written by J. K. Rowling.",
+    "price" : 400,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD4",
+    "stock" : 40,
+    "category" : "Literatura fantástica"
+}
+{
+    "title" : "Harry Potter and the Order of the Phoenix",
+    "description" : "Harry Potter and the Order of the Phoenix is the fifth novel in the Harry Potter series, written by J. K. Rowling.",
+    "price" : 500,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD5",
+    "stock" : 50,
+    "category" : "Literatura fantástica"
+}
+{
+    "title" : "Harry Potter and the Half-Blood Prince",
+    "description" : "Harry Potter and the Half-Blood Prince is the sixth novel in the Harry Potter series, written by J. K. Rowling.",
+    "price" : 600,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD6",
+    "stock" : 60,
+    "category" : "Literatura fantástica"
+}
+{
+    "title" : "Harry Potter and the Deathly Hallows",
+    "description" : "Harry Potter and the Deathly Hallows is the seventh and final novel in the Harry Potter series, written by British author J. K. Rowling.",
+    "price" : 700,
+    "thumbnail" : "https://www.google.com",
+    "code" : "COD7",
+    "stock" : 70,
+    "category" : "Literatura fantástica"
+}
